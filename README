@@ -1,0 +1,51 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4169
+
+" Plugin name :    VPSIONKI DATA
+" Plugin function: CSV Contact - VIM Plugin
+"
+
+" Version: 
+" Code version : 0.0099
+
+" Current status:
+"    First Initial Basic version (under work)
+
+" Author:  
+" Initially started by Patrick295767 </\at/\> gmail <\{dot}> com
+" Help, patches, comments, add-ons, flowers, ...  in further progressing welcome anytime. 
+
+" Aim:
+"      Create a portable program for database 
+"       
+"      Format to be handled in one soon future: CSV (Windows) and dbf
+"      Allow the multi-lines for the NOTES + being compatible with the use of 
+"      mutt and mutt-query.
+
+" Use: 
+" To start the CSV Contact plugin
+"    Press \ followed by k
+"    Once pressed, you may see your CSV file, and you can press
+"    h to display the previous record number
+"    j for going down to select the data (ex. address, name, surname, ...)
+"    k for going up to select the data (ex. address, name, surname, ...)
+"    l to display the next record number
+"    / to start the search
+
+" Tips: You could for instance use the unison program to sync this csv file. 
+
+" Dependencies:
+"    Does not need python
+"    Does not need perl
+"    ...
+"    Does only require Vim or Gvim :):)
+"    -> Remains Portable
+
+
+" Variables:
+" Please edit this line to setup your txt (csv file)"
+"     It might look like :   "record1","bla","bla" \n  "record2","bla","bla"
+let g:myvarabookvimcsvfile='c:\docs\outlook-contacts.txt'
+if has("unix")
+  let g:myvarabookvimcsvfile='~/contacts/outlook-contacts.txt'
+endif
+
